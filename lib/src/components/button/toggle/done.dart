@@ -11,6 +11,8 @@ class DoneToggleButtons extends StatelessWidget {
       onPressed: onPressed,
       isSelected: isSelected,
       borderColor: Colors.transparent,
+      selectedBorderColor: Colors.transparent,
+      fillColor: Colors.transparent,
       children: isSelected
           .map((e) => Icon(e ? Icons.done_sharp : Icons.done_outline_sharp))
           .toList(),
