@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:habitism/src/pages/settings.dart';
 import 'package:habitism/src/pages/task/index.dart';
 import 'package:habitism/src/pages/task/new.dart';
 import 'package:habitism/src/pages/task/show.dart';
@@ -20,9 +21,10 @@ class MyApp extends StatelessWidget {
         ),
         initialRoute: "/tasks",
         routes: {
+          "/settings": (BuildContext context) => const SettingsPage(),
           "/task": (BuildContext context) => const TaskPage(),
+          "/task/new": (BuildContext context) => const NewTaskPage(),
           "/tasks": (BuildContext context) => const TasksPage(),
-          "/tasks/new": (BuildContext context) => const NewTaskPage()
         });
   }
 }

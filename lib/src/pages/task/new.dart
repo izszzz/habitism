@@ -10,7 +10,7 @@ class NewTaskPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("New Task Page"),
       ),
-      bottomNavigationBar: bottomNavigationBar(),
+      bottomNavigationBar: bottomNavigationBar(context),
     );
   }
 }

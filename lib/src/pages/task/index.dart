@@ -15,9 +15,6 @@ class _TasksPageState extends State<TasksPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Tasks Page"),
-      ),
       body: Center(
           child: ListView(
               padding: const EdgeInsets.all(8),
@@ -36,7 +33,7 @@ class _TasksPageState extends State<TasksPage> {
                         )
                       ]))))
                   .toList())),
-      bottomNavigationBar: bottomNavigationBar(),
+      bottomNavigationBar: bottomNavigationBar(context),
     );
   }
 }
